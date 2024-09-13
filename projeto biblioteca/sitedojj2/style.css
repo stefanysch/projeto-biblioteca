@@ -1,0 +1,129 @@
+:root {
+  --color-1: #6a6a6a;
+  --color-2: #efc75e;
+  --color-3: #2e2e2e;
+  --color-4: #444;
+  --color-5: #fff;
+  --color-6: #000;
+  --font-size-1: 32px;
+  --font-size-2: 24px;
+  --font-size-3: 18px;
+  --font-size-4: 14px;
+  --font-1: "Charm", cursive;
+  --font-2: "Catamaran", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-1);
+  color: var(--color-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--color-3);
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-bottom: solid 2px var(--color-6);
+  box-sizing: border-box;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  border-top: 2%;
+}
+
+h2 {
+  font-family: var(--font-1);
+  font-size: 300%;
+  font-weight: 500;
+  color: var(--color-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.resumo {
+  display: flex;
+  align-items: flex-start;
+  max-width: 60%;
+  margin: 20px auto;
+}
+
+.livro-img {
+  width: 320px;
+  height: 480px;
+  margin: 0 auto;
+  margin-right: 20px;
+}
+
+.resumo p {
+  color: var(--color-5);
+  font-family: var(--font-2);
+  font-size: 150%;
+  line-height: 1.6;
+  border-radius: 2%;
+  width: 100%;
+}
+
+.resumo div {
+  border-radius: 2%;
+  width: 85%;
+}
+
+.resumo button {
+  background-color: var(--color-3);
+  color: var(--color-2);
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 100px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.resumo button:hover {
+  background-color: var(--color-4);
+  color: var(--color-2);
+}
+
+footer {
+  font-family: var(--font-2);
+  text-align: center;
+  background-color: var(--color-3);
+  padding: 10px;
+  margin-top: 20px;
+  color: var(--color-5);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: solid 1px var(--color-6);
+}
+
+a {
+  color: var(--color-2);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  color: var(--color-5);
+}
+
+a:hover {
+  text-decoration: underline;
+}

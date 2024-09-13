@@ -1,0 +1,243 @@
+:root {
+  --color-1: #6a6a6a;
+  --color-2: #efc75e;
+  --color-3: #2e2e2e;
+  --color-4: #444;
+  --color-5: #fff;
+  --color-6: #000;
+  --font-size-1: 32px;
+  --font-size-2: 24px;
+  --font-size-3: 18px;
+  --font-size-4: 14px;
+  --font-1: "Charm", cursive;
+  --font-2: "Catamaran", sans-serif;
+}
+
+body {
+  margin: 0;
+  color: var(--color-2);
+  font-family: var(--font-1);
+  background: linear-gradient(180deg, var(--color-1), var(--color-4));
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-3);
+  padding-top: 10px;
+  padding-left: 10px;
+  border-bottom: solid 2px var(--color-6);
+}
+
+
+ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li:last-child {
+  margin-right: 30px;
+}
+
+.search-form {
+  display: flex;
+  padding: 0px;
+  border: 1px solid var(--color-2);
+  border-radius: 4px;
+}
+
+form input[type="text"] {
+  flex: 1;
+  background-color: var(--color-4);
+  font-family: var(--font-2);
+  padding: 5 px 10px;
+  border: 1px solid var(--color-2);
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+form button i {
+  font-size: 24px;
+  color: var(--color-2);
+}
+
+.publicar-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+  color: var(--color-2);
+  transition: transform 0.3s ease;
+}
+
+.entrar-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+  color: var(--color-2);
+  transition: transform 0.3s ease;
+}
+
+.search-btn i,
+.publicar-btn i,
+.entrar-btn i {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.search-btn:hover i,
+.entrar-btn:hover i,
+.publicar-btn:hover i {
+  transform: scale(1.3);
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+  color: var(--color-2);
+}
+
+p {
+  font-family: var(--font-2);
+  font-size: var(--font-size-2);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-divider {
+  text-align: center;
+  margin: 20px auto;
+  background-color: var(--color-4);
+  padding: 10px;
+  border-top: solid 2px var(--color-6);
+  border-bottom: solid 2px var(--color-6);
+}
+
+.carrossel {
+  position: relative;
+  width: 100%;
+  margin: 10px auto;
+  overflow-x: hidden;
+}
+
+.frasesContainer {
+  flex: 0 0 auto;
+  flex-shrink: 0;
+  text-align: center;
+  margin: 10px auto;
+  padding: 20px;
+  border: solid 2px var(--color-2);
+  border-left: none;
+  border-right: none;
+  
+}
+
+.carrossel-container {
+  display: flex;
+  gap: 10px;
+  background-color: var(--color-1);
+  padding: 0 5%;
+  overflow-x: hidden;
+}
+
+.carrossel-frases-container {
+  display: flex;
+  gap: 5%;
+  background-color: var(--color-1);
+  padding: 0 5%;
+  overflow-x: hidden;
+}
+
+.carrossel-slide {
+  flex: 0 0 auto;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.carrossel-slide img {
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.carrossel-slide img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+figcaption {
+  margin-top: 10px;
+  color: var(--color-2);
+  font-family: var(--font-2);
+  font-size: var(--font-size-3);
+  font-weight: 500;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--color-5);
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+button.prev {
+  left: 15px;
+}
+
+button.next {
+  right: 15px;
+}
+
+footer {
+  font-family: var(--font-2);
+  text-align: center;
+  background-color: var(--color-3);
+  padding: 10px;
+  margin-top: 20px;
+  color: var(--color-5);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: solid 1px var(--color-6);
+}
+
+footer p {
+  font-size: var(--font-size-5);
+}
